@@ -1,0 +1,113 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+terminal length 0
+Router1#show cdp neighbors detail
+-------------------------
+Device ID: Switch1
+Entry address(es): 
+  IP address: 1.1.1.1
+Platform: cisco WS-C2960-48PST-L,  Capabilities: Switch IGMP 
+Interface: GigabitEthernet0/1/0,  Port ID (outgoing port): FastEthernet0/48
+Holdtime : 139 sec
+
+Version :
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(55)SE5, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2012 by Cisco Systems, Inc.
+Compiled Thu 09-Feb-12 19:11 by prod_rel_team
+
+advertisement version: 2
+Protocol Hello:  OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF00000000000034A84E680E80FF0000
+VTP Management Domain: 'toxfree'
+Native VLAN: 1
+Duplex: full
+Management address(es): 
+  IP address: 1.1.1.1
+
+
+Total cdp entries displayed : 1
+Router1#
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+terminal length 0
+Router2#show cdp neighbors detail
+-------------------------
+Device ID: Switch2
+Entry address(es): 
+  IP address: 1.1.1.2
+Platform: Cisco C867VAE-K9,  Capabilities: Router Trans-Bridge Source-Route-Bridge Switch IGMP 
+Interface: GigabitEthernet0/0/0,  Port ID (outgoing port): GigabitEthernet1
+Holdtime : 175 sec
+
+Version :
+Cisco IOS Software, C860 Software (C860VAE2-ADVSECK9-M), Version 15.6(3)M3a, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2017 by Cisco Systems, Inc.
+Compiled Tue 19-Sep-17 00:39 by prod_rel_team
+
+advertisement version: 2
+VTP Management Domain: ''
+Native VLAN: 5
+Duplex: full
+Management address(es): 
+  IP address: 1.1.1.2
+
+-------------------------
+Device ID: Switch3
+Entry address(es): 
+  IP address: 1.1.1.3
+Platform: cisco WS-C2960X-24PS-L,  Capabilities: Switch IGMP 
+Interface: GigabitEthernet0/1/0,  Port ID (outgoing port): GigabitEthernet1/0/24
+Holdtime : 167 sec
+
+Version :
+Cisco IOS Software, C2960X Software (C2960X-UNIVERSALK9-M), Version 15.2(2)E4, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Fri 12-Feb-16 22:57 by prod_rel_team
+
+advertisement version: 2
+Protocol Hello:  OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF0000000000005006ABCB6980FF0000
+VTP Management Domain: ''
+Native VLAN: 1
+Duplex: full
+Management address(es): 
+  IP address: 1.1.1.3
+
+
+Total cdp entries displayed : 2
+Router2#
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+terminal length 0
+Router3#show cdp neighbors detail
+-------------------------
+Device ID: Switch4
+Entry address(es): 
+  IP address: 1.1.1.4
+Platform: cisco WS-C3560CG-8PC-S,  Capabilities: Switch IGMP 
+Interface: GigabitEthernet0/1/0,  Port ID (outgoing port): GigabitEthernet0/9
+Holdtime : 143 sec
+
+Version :
+Cisco IOS Software, C3560C Software (C3560c405ex-UNIVERSALK9-M), Version 15.2(2)E4, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Sat 13-Feb-16 02:28 by prod_rel_team
+
+advertisement version: 2
+Protocol Hello:  OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF0000000000009C57AD04C500FF0000
+VTP Management Domain: ''
+Native VLAN: 1
+Duplex: full
+Management address(es): 
+  IP address: 1.1.1.4
+
+
+Total cdp entries displayed : 1
+Router3#
